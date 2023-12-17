@@ -19,6 +19,11 @@
   "bugs": {
     "url": "https://github.com/SauravKanchan/svelte-chartjs"
   },
+  "exports": {
+    ".": {
+      "svelte": "./package/index.js"
+    }
+  },
   "scripts": {
     "build": "del ./package && svelte-package && clear-package-json package/package.json -o package/package.json",
     "prepublishOnly": "pnpm test && pnpm build",
